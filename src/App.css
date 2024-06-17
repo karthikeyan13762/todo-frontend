@@ -1,0 +1,57 @@
+.heading{
+  text-align: center;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#create_form_input{
+  width: 250px;
+  padding: 5px;
+  outline: none;
+  border: 2px solid  rgb(92, 92, 241);
+}
+#create_form_button{
+  padding: 5px;
+  background-color: rgb(92, 92, 241);
+  margin-left: 3px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+#create_form_button:hover{
+  background-color: rgb(10, 10, 107);
+}
+.listdata{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(77, 77, 224);
+  width: 290px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid  rgb(198, 211, 21);
+  
+}
+.listContainer{
+  margin-top: 10px;
+}
+.checkbox{
+  display: flex;
+  justify-content: space-between;
+}
+.checkbox #data{
+  margin-left: 5px;
+  display: inline-block;
+  font-weight: bold;
+  color: aliceblue;
+
+}
+i{
+  color: white;
+}
+.delete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
