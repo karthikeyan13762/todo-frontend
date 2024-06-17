@@ -31,9 +31,16 @@ function Create({ setTodo, editTask, handleUpdate, setEditTask }) {
     }
   }
 
+  function handleSubmit(e) {
+    e.preventDefault(); // Prevent default form submission
+    handleClick(); // Call your handleClick function
+  }
+
   return (
     <div>
-      <form method="post">
+      <form onSubmit={handleSubmit}>
+        {" "}
+        {/* Add onSubmit event */}
         <input
           type="text"
           id="create_form_input"
@@ -43,7 +50,9 @@ function Create({ setTodo, editTask, handleUpdate, setEditTask }) {
           onChange={(e) => setTask(e.target.value)}
           required
         />
-        <button type="button" id="create_form_button" onClick={handleClick}>
+        <button type="submit" id="create_form_button">
+          {" "}
+          {/* Change button type to submit */}
           {editTask ? "Update" : "Add"}
         </button>
       </form>
